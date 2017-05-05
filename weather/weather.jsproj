@@ -84,12 +84,12 @@
     <Content Include="**\**" Exclude="**\platforms\**;**\bin\**;**\bld\**;**\node_modules\**;**\simulation\**;.gitignore;weather.*" />
   </ItemGroup>
   <ItemGroup>
+    <Content Remove="Content\**" />
+    <Content Remove="Scripts\**" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Update="config.xml">
       <SubType>Designer</SubType>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\" />
-    <Folder Include="Scripts\" />
   </ItemGroup>
 </Project>
