@@ -15,6 +15,12 @@ form {
     font-size: 22px;
 }
 
+#weather-data li{
+    text-align: center;
+    color: brown;
+}
+
+
 #title {
     font-size: 16px;
 }

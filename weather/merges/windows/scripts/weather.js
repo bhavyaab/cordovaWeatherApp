@@ -1,9 +1,8 @@
 ﻿var OpenWeatherAppKey = "138d2229890cd61a0a891ff12f577cb9";
 
 function getWeatherWithZipCode() {
-    $('#app-title').text("Windows Weather");
+    $('#app-title').text("Windows-x86 Weather");
     var zipcode = $('#zip-code-input').val();
-
     var queryString =
         'http://api.openweathermap.org/data/2.5/weather?zip='
         + zipcode + ',us&appid=' + OpenWeatherAppKey + '&units=imperial';
@@ -55,6 +54,8 @@ function getWeatherWithGeoLocation() {
 function onGetLocationSuccess(position) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
+
+    console.log('Latitude>>> ', latitude, ' Longitude>>> ', longitude);
     var queryString = 'http://api.openweathermap.org/data/2.5/weather?lat='
         + latitude + '&lon=' + longitude + '&appid=' + OpenWeatherAppKey + '&units=imperial';
     $('#get-weather-btn').prop('disabled', false);

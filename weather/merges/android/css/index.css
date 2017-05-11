@@ -10,13 +10,14 @@ form {
 #zip-code-input {
     font-size: 25px;
 }
-
 #get-weather-btn {
     font-size: 22px;
 }
 
 #title {
     font-size: 16px;
+    text-align: center;
+    background-color: orange;
 }
 
 #summary {
@@ -33,7 +34,7 @@ form {
     font-weight: bold;
 }
 
-.ui-bar-inherit.ui-header.header {
+.ui-bar-inherit .ui-header .header {
     background-color: #3388cc;
     border-color: #3388cc;
     color: #ffffff;
